@@ -1,0 +1,437 @@
+body {
+    background-color: #000;
+}
+.main-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../IMG/66502407_497285447707154_4711575468694831104_n.png');
+    background-size: cover;
+}
+.header-container {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+}
+.back-ground-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+}
+.menu-bar {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 5.5rem;
+}
+.menu-bar .main-title {
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 4.5rem;
+}
+.menu-bar .hamburger-menu-icon {
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+.main-content {
+    width: 75%;
+    position: relative;
+    margin-top: 10rem;
+    color: #fff;
+}
+.main-content h1 {
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.main-content p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+}
+.buttons-container {
+    margin-top: 3rem;
+} 
+.buttons-container .button {
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: transparent;
+    font-weight: bold;
+    border: 0.1rem solid #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button:hover {
+    color: #000;
+    background-color: #fff;
+}
+.fale-conosco {
+    margin-right: 1rem;
+}
+.button-ver-video {
+    border: none !important;
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-container {
+    background-color: #000;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10rem 0;
+}
+.service {
+    position: relative;
+    padding: 3.5rem 2rem;
+    color: #fff;
+    width: 20.4rem;
+    height: 25rem;
+    border: 0.1rem solid #ffffff3b;
+    transition: 0.5s;
+}
+.service h2 {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.service p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+}
+.service:hover {
+    transform: translateY(-5rem);
+    background-color: #fff;
+    color: #000;
+}
+.nav-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 0%;
+    background-color: #fff;
+    transition: 0.5s;
+    display: none;
+}
+.menu-container {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-container .parte-de-cima-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3.5rem;
+}
+.parte-de-cima-menu .close-menu-button {
+    font-size: 3rem;
+    display: inline-block;
+    margin-right: 10%;
+    position: relative;
+    cursor: pointer;
+}
+.close-menu-button:hover {
+    color: #000000b4;
+}
+.menu-container .parte-de-baixo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parte-de-baixo-menu .mensagem .mensagem-text {
+    font-size: 5rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+.menu-itens-e-social h3 {
+    font-size: 1.4rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    position: relative;
+}
+.menu-itens-e-social h3::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    margin-left: -2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+}
+.menu-itens {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: -2.5rem;
+}
+.menu-itens .menu-item-link {
+    text-decoration: none;
+}
+.menu-item-link li {
+    font-size: 4rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #000000b7;
+    line-height: 2;
+    display: inline-block;
+}
+.menu-item-link li:hover {
+    color: #000;
+}
+.social-title-of-menu {
+    margin: 2rem 0;
+}
+.social-itens {
+    padding-left: 0rem;
+    margin-left: -2.5rem;
+}
+.social-itens .social-icon {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+}
+.social-itens .social-midia-link {
+    text-decoration: none;
+    color: #000;
+}
+.um-pouco-sobre-nos-container {
+    width: 80%;
+    position: relative;
+    margin: 20rem 0;
+}
+.um-pouco-sobre-nos-content {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.um-pouco-sobre-nos-content-description {
+    position: absolute;
+    width: 60%;
+    color: #fff;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.um-pouco-sobre-nos-content-description h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    position: relative;
+    margin-left: 2.5rem;
+}
+.um-pouco-sobre-nos-content-description h3::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    margin-left: -2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+}
+.um-pouco-sobre-nos-content-description h1 {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 4.5rem;
+    margin: 1.5rem 0;
+}
+.um-pouco-sobre-nos-content-description p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    border-left: 0.2rem solid #EA4848;
+    padding-left: 1rem;
+}
+.um-pouco-sobre-nos-content-img-container {
+    position: relative;
+    width: 60%;
+    height: 40rem;
+    background-image: url('../IMG/marcus-graham-project.png');
+    object-fit: cover;
+    margin-left: auto;
+}
+.um-pouco-sobre-nos-content-img-container::after {
+    content: '';
+    width: 1rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #EA4848;
+}
+.feitos-por-nos-container {
+    width: 90%;
+    align-self: flex-end;
+    background-color: #fff;
+    border-left: 1rem solid #EA4848;
+    box-sizing: border-box;
+    margin: 10rem 0;
+    padding: 25rem 0 15rem 0;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    position: relative;
+}
+.feitos-por-nos-content {
+    width: 90%;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+    margin-left: auto;
+    position: relative;
+}
+.feitos-por-nos-content-description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.feitos-por-nos-content-description-section {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 5rem;
+}
+.feitos-por-nos-content-description-section::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 4rem;
+    margin-left: -5.0rem;
+    height: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+}
+.feitos-por-nos-content-description-title {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 4.5rem;
+    
+}
+.feitos-por-nos-content-description-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+}
+.feitos-por-nos-content-description-controlador-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.feitos-por-nos-content-description-controlador-buttons {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 2rem;
+}
+.button-controlador {
+    border: none;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.button-controlador .button-icon {
+    font-size: 1.4rem;
+}
+.button-controlador:hover {
+    background-color: #000000cc;
+}
+.ver-mais-button {
+    position: absolute;
+    border: none;
+    color: #000;
+    right: 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.feitos-por-nos-content-projects-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 2rem;
+}
+.project {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    border: none;
+    box-shadow: #000;
+    flex-shrink: 0;
+    margin-right: 4.5rem;
+}
+.project::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    right: 5%;
+    border: 0.2rem solid #707070;
+}
+.camada-de-filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+    z-index: 1;
+}
+.project-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border: none;
+}
+.project-description {
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.project-description h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+}
+.project-description p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+}
+.container-de-informacoes-e-contactos {
+    width: 80%;
+    position: relative;
+    margin-top: 10rem;
+}
