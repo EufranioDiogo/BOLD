@@ -191,6 +191,13 @@ body {
 .menu-itens .menu-item-link {
     text-decoration: none;
 }
+.menu-item-link:nth-child(3) {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+}
 .menu-item-link li {
     font-size: 4rem;
     font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -216,6 +223,161 @@ body {
 .social-itens .social-midia-link {
     text-decoration: none;
     color: #000;
+}
+
+
+.contact-container-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000cf;
+    z-index: 10;
+    transition: 0.5s;
+    display: none;
+    opacity: 0;
+}
+.contact-container {
+    position: relative;
+    height: 90%;
+    width: 75%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 11;
+    transition: 0.5s;
+    opacity: 0;
+}
+.contact-container .left-part {
+    width: 25%;
+    background-image: url('../IMG/rocket-lift-off-liftoff-astronautics-87089-L1.png');
+    background-size: cover;
+    position: relative;
+}
+.contact-container .left-part::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.619);
+}
+.contact-container .right-part {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+.close-menu-button-contact {
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    right: 5%;
+    font-size: 3rem;
+    color: #000000a4;
+    cursor: pointer;
+}
+.close-menu-button-contact:hover {
+    color: #000;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.form-container .contact-question {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 5rem;
+}
+.form-container .contact-question:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 4rem;
+    margin-left: -5.0rem;
+    height: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+}
+.contact-title {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.row label {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+}
+.row input {
+    border: none;
+    border-bottom: 0.1rem solid #000;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    margin: 1rem 0;
+}
+.row-2 {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+.row-2 .column {
+    display: inline-block;
+}
+.row-2 .column input {
+    width: 90%;
+}
+.row-2 .column:nth-child(2) input {
+    width: 100%;
+}
+.row-3 textarea{
+    resize: none;
+    height: 7.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.619);
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+}
+.row-4 {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 2rem;
+}
+.row-4 button[type="submit"] {
+    border: 0.1rem solid #000;
+    color: #000;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    cursor: pointer;
+}
+.row-4 button[type="submit"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+.row-4 .social-itens .social-midia-link:nth-child(3) i{
+    margin-right: 0;
 }
 .um-pouco-sobre-nos-container {
     width: 80%;
