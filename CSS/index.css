@@ -46,13 +46,13 @@ body {
     margin-top: 10rem;
     color: #fff;
 }
-.main-content h1 {
+.main-content .main-content-title {
     font-family: "IBM Plex Sans Condensed";
     font-size: 4.5rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
-.main-content p {
+.main-content .main-content-text {
     font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
 }
@@ -105,16 +105,21 @@ body {
     width: 20.4rem;
     height: 25rem;
     border: 0.1rem solid #ffffff3b;
-    transition: 0.5s;
+    transition: 1.5s;
 }
-.service h2 {
+.service .service-name {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-.service p {
+.service .service-description {
     font-family: Montserrat, sans-serif;
     font-size: 1.2rem;
+}
+.service .service-icon {
+    /*
+        Waiting Itens
+    */
 }
 .service:hover {
     transform: translateY(-5rem);
@@ -165,12 +170,13 @@ body {
     font-size: 5rem;
     font-family: "IBM Plex Sans Condensed", sans-serif;
 }
-.menu-itens-e-social h3 {
+
+.menu-title {
     font-size: 1.4rem;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     position: relative;
 }
-.menu-itens-e-social h3::before {
+.menu-title::before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -198,7 +204,7 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
-.menu-item-link li {
+.menu-item-link .menu-item {
     font-size: 4rem;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     text-transform: uppercase;
@@ -206,7 +212,7 @@ body {
     line-height: 2;
     display: inline-block;
 }
-.menu-item-link li:hover {
+.menu-item-link .menu-item:hover {
     color: #000;
 }
 .social-title-of-menu {
@@ -224,7 +230,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
 
 .contact-container-filter {
     position: fixed;
@@ -320,12 +325,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-.row label {
+.row .contact-form-label {
     color: #000;
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
 }
-.row input {
+.row .contact-form-input {
     border: none;
     border-bottom: 0.1rem solid #000;
     color: #000;
@@ -341,10 +346,10 @@ body {
 .row-2 .column {
     display: inline-block;
 }
-.row-2 .column input {
+.row-2 .column .contact-form-input {
     width: 90%;
 }
-.row-2 .column:nth-child(2) input {
+.row-2 .column:nth-child(2) .contact-form-input {
     width: 100%;
 }
 .row-3 textarea{
@@ -363,7 +368,7 @@ body {
     position: relative;
     margin-top: 2rem;
 }
-.row-4 button[type="submit"] {
+.row-4 .submit-button {
     border: 0.1rem solid #000;
     color: #000;
     padding: 1rem 3rem;
@@ -372,7 +377,7 @@ body {
     background-color: #fff;
     cursor: pointer;
 }
-.row-4 button[type="submit"]:hover {
+.row-4 .submit-button:hover {
     background-color: #000;
     color: #fff;
 }
@@ -399,13 +404,13 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.um-pouco-sobre-nos-content-description h3 {
+.um-pouco-sobre-nos-content-description .heading3 {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
     position: relative;
     margin-left: 2.5rem;
 }
-.um-pouco-sobre-nos-content-description h3::before {
+.um-pouco-sobre-nos-content-description .heading3::before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -416,13 +421,13 @@ body {
     transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
 }
-.um-pouco-sobre-nos-content-description h1 {
+.um-pouco-sobre-nos-content-description .heading1 {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-size: 4.5rem;
     margin: 1.5rem 0;
     text-transform: uppercase;
 }
-.um-pouco-sobre-nos-content-description p {
+.um-pouco-sobre-nos-content-description .text {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
     border-left: 0.2rem solid #EA4848;
@@ -601,7 +606,8 @@ body {
     transform: translateX(-50%);
     z-index: 2;
 }
-.project-description h4 {
+/*Stop Point*/
+.project-description  {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
 }
@@ -757,4 +763,227 @@ footer p {
     color: #fff;
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
+}
+@media only screen and (max-width: 1024px) {
+    .nav-menu {
+        width: 90%;
+        height: 80vh;
+    }
+    .parte-de-baixo-menu {
+        flex-wrap: wrap;
+    }
+    .menu-itens-e-social {
+        position: relative;
+        margin-left: 10%;
+    }
+    .main-header {
+        height: 80vh;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .main-content .main-content-title {
+        font-size: 3.5rem;
+    }
+    .main-content .main-content-text {
+        font-size: 1.6rem;
+    }
+    .services-container {
+        width: 80%;
+        justify-content: center;
+    }
+    .service {
+        margin: 2rem;
+    }
+    .um-pouco-sobre-nos-container {
+        width: 100%;
+    }
+    .um-pouco-sobre-nos-container .um-pouco-sobre-nos-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .um-pouco-sobre-nos-content-description {
+        width: 95%;
+        position: relative;
+    }
+    .um-pouco-sobre-nos-content-img-container {
+        width: 100%;
+        margin-left: 0;
+    }
+    .feitos-por-nos-container {
+        width: 100%;
+    }
+    .feitos-por-nos-content {
+        flex-direction: column;
+    }
+    .feitos-por-nos-content-description {
+        width: 100%;
+    }
+    .feitos-por-nos-container {
+        padding: 10rem 0 5rem 0;
+    }
+    .feitos-por-nos-content-description-title {
+        font-size: 2.5rem;
+    }
+    .feitos-por-nos-content-description-controlador-container {
+        display: none;
+    }
+    .feitos-por-nos-content-projects-container {
+        width: 90%;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .project {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .project::before {
+        display: none;
+    }
+    .container-de-informacoes-e-contactos {
+        width: 100%;
+    }
+    .subscreva-newsletter-container-1 {
+        flex-direction: column;
+    }
+    .subscreva-newsletter-text-container h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .subscreva-newsletter-text-container p {
+        text-align: center;
+    }
+    .subscreva-newsletter-container-2-1-title {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .subscreva-newsletter-container-2-1-text {
+        text-align: center;
+    }
+    .mais-sobre-nos-container {
+        width: 80%;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    .mais-sobre-nos-item {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .nav-menu {
+        width: 100% !important;
+        height: 100vh;
+    }
+    .parte-de-baixo-menu {
+        flex-wrap: wrap;
+    }
+    .menu-itens-e-social {
+        position: relative;
+        margin-left: 10%;
+    }
+    .main-header {
+        height: 100vh;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .menu-container {
+        width: 90%;
+    }
+    .main-content .main-content-title {
+        font-size: 2.5rem;
+    }
+    .main-content .main-content-text {
+        font-size: 1.6rem;
+    }
+    .menu-container .parte-de-cima-menu {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .menu-container .parte-de-cima-menu i {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .services-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .service {
+        margin-bottom: 3rem;
+    }
+    .um-pouco-sobre-nos-container {
+        width: 100%;
+    }
+    .um-pouco-sobre-nos-container .um-pouco-sobre-nos-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .um-pouco-sobre-nos-content-description {
+        width: 95%;
+        position: relative;
+    }
+    .um-pouco-sobre-nos-content-img-container {
+        width: 100%;
+        margin-left: 0;
+    }
+    .feitos-por-nos-container {
+        width: 100%;
+    }
+    .feitos-por-nos-content {
+        flex-direction: column;
+    }
+    .feitos-por-nos-content-description {
+        width: 100%;
+    }
+    .feitos-por-nos-container {
+        padding: 10rem 0 5rem 0;
+    }
+    .feitos-por-nos-content-description-title {
+        font-size: 2.5rem;
+    }
+    .feitos-por-nos-content-description-controlador-container {
+        display: none;
+    }
+    .feitos-por-nos-content-projects-container {
+        width: 90%;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        padding: 0;
+    }
+    .project {
+        margin-bottom: 5rem;
+    }
+    .project::before {
+        display: none;
+    }
+    .container-de-informacoes-e-contactos {
+        width: 100%;
+    }
+    .subscreva-newsletter-container-1 {
+        flex-direction: column;
+    }
+    .subscreva-newsletter-text-container h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .subscreva-newsletter-text-container p {
+        text-align: center;
+    }
+    .subscreva-newsletter-container-2-1-title {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .subscreva-newsletter-container-2-1-text {
+        text-align: center;
+    }
+    .mais-sobre-nos-container {
+        justify-content: center;
+    }
+    .mais-sobre-nos-item {
+        margin-bottom: 5rem;
+    }
 }
