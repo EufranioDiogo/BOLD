@@ -32,9 +32,10 @@ body {
     color: #fff;
     margin-bottom: 5.5rem;
 }
-.menu-bar .main-title {
+.u-heading1 {
     font-family: "IBM Plex Sans Condensed";
     font-size: 4.5rem;
+    text-transform: uppercase;
 }
 .menu-bar .hamburger-menu-icon {
     font-size: 3.5rem;
@@ -47,8 +48,6 @@ body {
     color: #fff;
 }
 .main-content .main-content-title {
-    font-family: "IBM Plex Sans Condensed";
-    font-size: 4.5rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
@@ -312,8 +311,6 @@ body {
     background-color: #000;
 }
 .contact-title {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 3rem;
     margin-top: 1rem;
 }
 .contact-form {
@@ -422,8 +419,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .um-pouco-sobre-nos-content-description .heading1 {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 4.5rem;
     margin: 1.5rem 0;
     text-transform: uppercase;
 }
@@ -496,8 +491,6 @@ body {
     background-color: #000;
 }
 .feitos-por-nos-content-description-title {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 4.5rem;
     
 }
 .feitos-por-nos-content-description-text {
@@ -631,8 +624,6 @@ body {
     margin-bottom: 10rem;
 }
 .subscreva-newsletter-text-container h1 {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 4.5rem;
     margin-bottom: 1rem;
 }
 .subscreva-newsletter-text-container p {
@@ -667,8 +658,6 @@ body {
     align-items: center;
 }
 .subscreva-newsletter-container-2-1-title {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 4.5rem;
     margin-bottom: 1rem;
     margin-top: 0;
 }
@@ -894,7 +883,7 @@ footer p {
     .menu-container {
         width: 90%;
     }
-    .main-content .main-content-title {
+    .u-heading1 {
         font-size: 2.5rem;
     }
     .main-content .main-content-text {
@@ -942,9 +931,6 @@ footer p {
     .feitos-por-nos-container {
         padding: 10rem 0 5rem 0;
     }
-    .feitos-por-nos-content-description-title {
-        font-size: 2.5rem;
-    }
     .feitos-por-nos-content-description-controlador-container {
         display: none;
     }
@@ -968,14 +954,12 @@ footer p {
     }
     .subscreva-newsletter-text-container h1 {
         text-align: center;
-        font-size: 3.5rem;
     }
     .subscreva-newsletter-text-container p {
         text-align: center;
     }
     .subscreva-newsletter-container-2-1-title {
         text-align: center;
-        font-size: 3.5rem;
     }
     .subscreva-newsletter-container-2-1-text {
         text-align: center;
