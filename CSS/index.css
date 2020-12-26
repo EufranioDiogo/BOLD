@@ -7,7 +7,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    background-image: url('../IMG/66502407_497285447707154_4711575468694831104_n.png');
+    background: transparent linear-gradient(245deg, #FFFFFF00 0%, #191919AF 34%, #0E0E0ED3 40%, #0E0E0ED4 41%, #000000 75%, #000000 100%) 0% 0% no-repeat padding-box;
     background-size: cover;
 }
 .header-container {
@@ -104,7 +104,8 @@ body {
     width: 20.4rem;
     height: 25rem;
     border: 0.1rem solid #ffffff3b;
-    transition: 1.5s;
+    transition: 1s;
+    cursor: default;
 }
 .service .service-name {
     font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -449,7 +450,6 @@ body {
     width: 90%;
     align-self: flex-end;
     background-color: #fff;
-    border-left: 1rem solid #EA4848;
     box-sizing: border-box;
     margin: 10rem 0;
     padding: 25rem 0 15rem 0;
@@ -677,19 +677,23 @@ body {
     padding: 0.5rem;
     width: 95%;
 }
-.subscreva-newsletter-container-2-1-form input {
+.subscreva-newsletter-container-2-1-form .email-input-newsletter{
     border: none;
     box-sizing: unset;
     color: #000;
     font-family: Montserrat, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
+    display: block;
+    width: 85%;
 }
-.subscreva-newsletter-container-2-1-form button[type="submit"] {
+.subscreva-newsletter-container-2-1-form .submit-email-to-newletter {
     border: none;
     background-color: #000;
     padding: 1rem 2rem;
     color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 .mais-sobre-nos-container {
     display: flex;
@@ -735,7 +739,7 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 1.2rem;
 }
-footer {
+.footer {
     width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
@@ -746,7 +750,7 @@ footer {
     align-items: center;
     align-self: center;
 } 
-footer p {
+.footer .text {
     margin: 0;
     margin-top: 2.5rem;
     color: #fff;
@@ -755,8 +759,8 @@ footer p {
 }
 @media only screen and (max-width: 1024px) {
     .nav-menu {
-        width: 90%;
-        height: 80vh;
+        width: 100% !important;
+        height: 100vh;
     }
     .parte-de-baixo-menu {
         flex-wrap: wrap;
@@ -766,10 +770,49 @@ footer p {
         margin-left: 10%;
     }
     .main-header {
-        height: 80vh;
+        height: 100vh;
     }
     .main-content {
         width: 100%;
+    }
+    .menu-container {
+        width: 90%;
+    }
+    .u-heading1 {
+        font-size: 2.5rem;
+    }
+    .main-content .main-content-text {
+        font-size: 1.6rem;
+    }
+    .menu-container .parte-de-cima-menu {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .menu-container .parte-de-cima-menu i {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .contact-container {
+        width: 90%;
+    }
+    .contact-container .left-part {
+        display: none;
+    }
+    .contact-container .right-part {
+        width: 100%;
+    }
+    .form-container {
+        width: 90%;
+        padding-left: 2rem;
+    }
+    .row-2 {
+        flex-direction: column;
+    }
+    .row-2 .column .contact-form-input {
+        width: 100%;
+    }
+    .back-ground-filter {
+        height: 80vh;
     }
     .main-content .main-content-title {
         font-size: 3.5rem;
@@ -801,12 +844,15 @@ footer p {
     }
     .feitos-por-nos-container {
         width: 100%;
+        justify-content: center;
     }
     .feitos-por-nos-content {
         flex-direction: column;
+        margin-left: 0;
     }
     .feitos-por-nos-content-description {
         width: 100%;
+        margin-bottom: 1rem;
     }
     .feitos-por-nos-container {
         padding: 10rem 0 5rem 0;
@@ -818,7 +864,7 @@ footer p {
         display: none;
     }
     .feitos-por-nos-content-projects-container {
-        width: 90%;
+        width: 100%;
         margin-top: 1.5rem;
         flex-wrap: wrap;
         padding: 0;
@@ -903,9 +949,13 @@ footer p {
     }
     .service {
         margin-bottom: 3rem;
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .um-pouco-sobre-nos-container {
         width: 100%;
+        margin-top: 5rem;
     }
     .um-pouco-sobre-nos-container .um-pouco-sobre-nos-content {
         flex-direction: column;
@@ -915,18 +965,25 @@ footer p {
         width: 95%;
         position: relative;
     }
+    .um-pouco-sobre-nos-content-description .heading1 {
+        border-left: 0.2rem solid #EA4848;
+        padding-left: 1rem;
+    }
     .um-pouco-sobre-nos-content-img-container {
         width: 100%;
         margin-left: 0;
     }
     .feitos-por-nos-container {
         width: 100%;
+        margin-top: 0;
     }
     .feitos-por-nos-content {
+        width: 100%;
         flex-direction: column;
     }
     .feitos-por-nos-content-description {
-        width: 100%;
+        width: 95%;
+        align-self: flex-end;
     }
     .feitos-por-nos-container {
         padding: 10rem 0 5rem 0;
@@ -935,10 +992,11 @@ footer p {
         display: none;
     }
     .feitos-por-nos-content-projects-container {
-        width: 90%;
+        width: 100%;
         margin-top: 1.5rem;
         flex-direction: column;
         padding: 0;
+        align-items: center;
     }
     .project {
         margin-bottom: 5rem;
@@ -951,6 +1009,7 @@ footer p {
     }
     .subscreva-newsletter-container-1 {
         flex-direction: column;
+        margin-bottom: 15rem;
     }
     .subscreva-newsletter-text-container h1 {
         text-align: center;
