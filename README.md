@@ -19,7 +19,7 @@
 -->
 [![Contributors][contributors-shield]](https://github.com/EufranioDiogo/BOLD/CONTRIBUTORS.md)
 [![Forks][forks-shield]](https://github.com/EufranioDiogo/BOLD/fork)
-[![Stargazers][stars-shield]][stars-url]
+[![Stargazers][stars-shield]](https://github.com/EufranioDiogo/BOLD/stargazersi)
 [![Issues][issues-shield]](https://github.com/EufranioDiogo/BOLD/issues)
 [![MIT License][license-shield]](https://github.com/EufranioDiogo/BOLD/blob/master/LICENSE)
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/eufranio-diogo-a33145122/)
