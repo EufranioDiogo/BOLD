@@ -29,14 +29,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/EufranioDiogo/BOLD">
-    <img src="images/logo_param.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
+<h1 align="center">BOLD</h1>
 
   <p align="center">
-    project_description
     <br />
     <a href="https://github.com/EufranioDiogo/BOLD"><strong>Explore the docs »</strong></a>
     <br />
@@ -84,7 +79,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://eufraniodiogo.github.io/BOLD)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `EufranioDiogo`, `BOLD`, `twitter_handle`, `eufranio-diogo-a33145122`, `gmail.com`, , `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -193,4 +188,4 @@ Project Link: [https://github.com/EufranioDiogo/BOLD](https://github.com/Eufrani
 [license-url]: https://github.com/EufranioDiogo/BOLD/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/eufranio-diogo-a33145122
-[product-screenshot]: images/screenshot_param.png
+[product-screenshot]: IMG/screenshot_param.png
