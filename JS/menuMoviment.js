@@ -7,21 +7,17 @@ const contactContainerFilter = document.querySelector('.contact-container-filter
 const contactContainer = document.querySelector('.contact-container');
 
 
-closeMenuButton.addEventListener('click', () => {
-    menu.style.width = '0%';
-    setTimeout(() => {
-        menu.style.display = 'none';
-    }, 495);
-});
+const openContactForm = () => {
+    contactContainer.style.display = 'flex';
+    contactContainerFilter.style.display = 'block';
 
-openMenuButton.addEventListener('click', () => {
-    menu.style.display = 'block';
     setTimeout(() => {
-        menu.style.width = '75%';
+        contactContainer.style.opacity = '1';
+        contactContainerFilter.style.opacity = '1';
     }, 100);
-});
+}
 
-closeContactFormButton.addEventListener('click', () => {
+const closeContactForm = () => {
     contactContainer.style.opacity = '0';
     setTimeout(() => {
         contactContainerFilter.style.opacity = '0';
@@ -31,14 +27,35 @@ closeContactFormButton.addEventListener('click', () => {
         contactContainer.style.display = 'none';
         contactContainerFilter.style.display = 'none';
     }, 650)
+}
+
+const openMenu = () => {
+    menu.style.display = 'block';
+    setTimeout(() => {
+        menu.style.width = '75%';
+    }, 100);
+}
+
+const closeMenu = () => {
+    menu.style.width = '0%';
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 495);
+}
+
+closeMenuButton.addEventListener('click', () => {
+    closeMenu();
+});
+
+openMenuButton.addEventListener('click', () => {
+    openMenu();
+});
+
+closeContactFormButton.addEventListener('click', () => {
+    closeContactForm();
 });
 
 openContactFormButton.addEventListener('click', () => {
-    contactContainer.style.display = 'flex';
-    contactContainerFilter.style.display = 'block';
-
-    setTimeout(() => {
-        contactContainer.style.opacity = '1';
-        contactContainerFilter.style.opacity = '1';
-    }, 100);
+    openContactForm();
+    closeMenu();
 });

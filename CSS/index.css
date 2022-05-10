@@ -42,7 +42,6 @@ body {
     cursor: pointer;
     width: 30px;
     height: 30px;
-    background-color: #fff;
 }
 .main-content {
     width: 75%;
@@ -130,7 +129,7 @@ body {
     color: #000;
 }
 .nav-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
@@ -138,6 +137,8 @@ body {
     background-color: #fff;
     transition: 0.5s;
     display: none;
+    z-index: 1000;
+    border-left: 0.1rem solid #000;
 }
 .menu-container {
     position: relative;
@@ -160,7 +161,6 @@ body {
     margin-right: 10%;
     position: relative;
     cursor: pointer;
-    background-color: #333;
     width: 30px;
     height: 30px;
 }
@@ -700,6 +700,9 @@ body {
     color: #fff;
     font-size: 1.6rem;
     cursor: pointer;
+}
+.subscreva-newsletter-container-2-1-form .submit-email-to-newletter:hover {
+    background-color: #000000d6;
 }
 .mais-sobre-nos-container {
     display: flex;
