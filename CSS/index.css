@@ -40,6 +40,9 @@ body {
 .menu-bar .hamburger-menu-icon {
     font-size: 3.5rem;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
 }
 .main-content {
     width: 75%;
@@ -157,6 +160,9 @@ body {
     margin-right: 10%;
     position: relative;
     cursor: pointer;
+    background-color: #333;
+    width: 30px;
+    height: 30px;
 }
 .close-menu-button:hover {
     color: #000000b4;
